@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+body {
+  padding: 0px 120px;
+  height: 100vh;
+  background-color: rgb(185, 240, 240);
+  font-family: "Roboto", sans-serif;
+}
+/* Main Container*/
+.main-container {
+  margin: 0px 100px;
+  padding: 10px;
+  background-color: rgb(58, 240, 58);
+  min-height: 100vh;
+}
+/*container 1*/
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.container-1 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 202px;
+  padding: 10px 0px 10px 10px;
+}
+.container-1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0px 5px 5px 0px;
+}
+.container-1-text h1 {
+  font-size: 40px;
+}
+.container-1-text p {
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Container 2 */
+.container-2 {
+  margin-top: 50px;
+}
+.container-2 h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+/* Container 3 */
+.container-3 {
+  margin-top: 20px;
+}
+.container-3 h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.container-3 ul li {
+  text-decoration: none;
+  list-style: none;
+}
+.container-4 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+footer {
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 0px -10px -10px -10px;
+}
+
+/*Mobile View*/
+@media (max-width: 786px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 10px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    margin: 0;
+    padding: 0px 10px;
+  }
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-1 img {
+    height: 150px;
+    width: 150px;
+  }
+  .container-1-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-1-text h1 {
+    font-size: 20px;
+  }
+  .container-1-text p {
+    justify-content: flex-start;
+  }
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .container-2 h1 {
+    font-size: 20px;
+  }
+  .container-3 {
+    margin-top: 5px;
+  }
+  .container-3 h2 {
+    font-size: 20px;
+  }
+  .container-3 p {
+    font-size: 10px;
+  }
+}
