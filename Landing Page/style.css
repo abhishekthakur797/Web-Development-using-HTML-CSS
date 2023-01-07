@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+}
+/*! 1.First section of index.html*/
+.first-section {
+  background-image: url(./images/developer.png);
+  height: 100vh;
+}
+.first-section-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.first-section-name {
+  color: red;
+  font-size: 35px;
+}
+/*!Second section of index.html */
+.second-section {
+  background-color: black;
+  color: rgb(255, 252, 252);
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 20px;
+}
+/*! Third Section of index.html */
+.third-section {
+  margin: 20px 150px;
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+}
+.third-section p {
+  line-height: 1.5;
+}
+.third-section-content {
+  box-shadow: 1px 1px 1px 1px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: ease-in-out 0.3s;
+}
+.third-section-content:hover {
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  transform: scale(1.04, 1.02);
+}
+.third-section-title img {
+  height: 50px;
+  width: 50px;
+}
+.third-section-title {
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.third-section-title h1 {
+  font-size: 30px;
+  margin-top: 5px;
+}
+/*! 4. Fourth Section*/
+.fourth-section {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 40px;
+}
+/*!fourth section content 1*/
+.fourth-section-content-1 {
+  border-radius: 20px;
+}
+
+.fourth-section-content-1 h2 {
+  background-color: rgb(179, 2, 2);
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  font-size: 30px;
+}
+.fourth-section-content-1 p {
+  padding: 20px 70px;
+  background-color: rgb(160, 224, 169);
+}
+/*?fourth section content 2*/
+.fourth-section-content-2 {
+  border-radius: 20px;
+}
+.fourth-section-content-2 h2 {
+  background-color: rgb(9, 115, 25);
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  font-size: 30px;
+}
+.fourth-section-content-2 p {
+  padding: 20px 70px;
+  background-color: rgb(215, 145, 145);
+}
