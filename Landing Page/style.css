@@ -113,3 +113,51 @@ footer {
   font-size: 20px;
 }
 /*?For Mobile View*/
+@media (max-width: 450px) {
+  * {
+    width: 400px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .first-section {
+    width: 400px;
+    height: 500px;
+    margin: 0;
+  }
+  .first-section-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .first-section-text h1 {
+    font-size: 3vh;
+  }
+  .first-section-name {
+    font-size: 2vh;
+  }
+  .first-section-name h2 {
+    font-size: 1vh;
+  }
+  /*! 2.second section*/
+  .second-section h1 {
+    font-size: 2vh;
+    width: auto;
+  }
+  /*! 3.Third Section */
+  .third-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  /*! 4.Fourth section*/
+  .fourth-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .fourth-section-content-1,
+  .fourth-section-content-2 {
+    border-radius: 0px;
+  }
+}
