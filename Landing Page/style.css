@@ -7,10 +7,12 @@
 }
 /*! 1.First section of index.html*/
 .first-section {
-  background-image: url(./images/developer.png);
-  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 .first-section-text {
+  position: absolute;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -19,9 +21,12 @@
   font-size: 30px;
   font-weight: bold;
 }
+.first-section-text h2 {
+  font-size: 9vh;
+}
 .first-section-name {
-  color: red;
   font-size: 35px;
+  color: red;
 }
 /*!Second section of index.html */
 .second-section {
@@ -82,11 +87,11 @@
   background-color: rgb(179, 2, 2);
   border-radius: 20px 0px 0px 0px;
   color: white;
-  font-size: 30px;
-  padding: 10px 0px;
+  font-size: 5vh;
+  padding: 5px 0px;
 }
 .fourth-section-content-1 p {
-  padding: 20px 70px;
+  padding: 10px 70px;
   background-color: rgb(160, 224, 169);
 }
 /*?fourth section content 2*/
@@ -97,11 +102,11 @@
   background-color: rgb(9, 115, 25);
   border-radius: 0px 20px 0px 0px;
   color: white;
-  font-size: 30px;
-  padding: 10px 0px;
+  font-size: 5vh;
+  padding: 5px 0px;
 }
 .fourth-section-content-2 p {
-  padding: 20px 70px;
+  padding: 10px 70px;
   background-color: rgb(215, 145, 145);
 }
 /*Footer Section*/
@@ -113,10 +118,11 @@ footer {
   font-size: 20px;
 }
 /*?For Mobile View*/
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   * {
     width: 400px;
     align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
   }
@@ -125,19 +131,24 @@ footer {
     height: 500px;
     margin: 0;
   }
+  .first-section img {
+    width: 400px;
+    height: 500px;
+  }
   .first-section-text {
     display: flex;
-    text-align: center;
-    align-items: center;
+    justify-content: flex-start;
+    top: 0;
   }
   .first-section-text h1 {
-    font-size: 3vh;
+    font-size: 4vh;
   }
   .first-section-name {
-    font-size: 2vh;
+    font-size: 3vh;
+    color: red;
   }
-  .first-section-name h2 {
-    font-size: 1vh;
+  .first-section-text h2 {
+    font-size: 5vh;
   }
   /*! 2.second section*/
   .second-section h1 {
@@ -148,15 +159,50 @@ footer {
   .third-section {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    width: 350px;
+    padding: 0px 50px;
   }
+  .third-section-content {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    width: 350px;
+    text-align: center;
+  }
+  .third-section-content p {
+    width: auto;
+    padding: 20px;
+  }
+
+  .third-section-content img {
+    width: 250px;
+    border-radius: 0px;
+  }
+  .third-section-title {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 310px;
+  }
+  .third-section-title h1 {
+    font-size: 4vh;
+    width: 310px;
+  }
+  .third-section-title img {
+    width: 50px;
+  }
+
   /*! 4.Fourth section*/
   .fourth-section {
     display: flex;
     flex-direction: column;
   }
-  .fourth-section-content-1,
+  .fourth-section-content-1 h2,
   .fourth-section-content-2 {
     border-radius: 0px;
   }
