@@ -3,13 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-}
+
 /*! 1.First section of index.html*/
 .first-section {
   display: flex;
   position: relative;
   justify-content: center;
+}
+.first-section img {
+  width: 100%;
+  height: 100vh;
 }
 .first-section-text {
   position: absolute;
@@ -38,26 +41,33 @@
 }
 /*! Third Section of index.html */
 .third-section {
-  margin: 20px 150px;
+  padding: 40px;
   display: flex;
   gap: 30px;
   text-align: center;
   align-items: center;
 }
 .third-section p {
-  line-height: 1.5;
+  line-height: 1.2;
+  font-size: 2.6vh;
+}
+.third-section h1 {
+  font-size: 2vh;
 }
 .third-section-content {
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   padding: 10px;
   border-radius: 20px;
-  transition: ease-in-out 0.3s;
+  transition: 0.3s ease-in-out;
+}
+.third-section-content img {
+  width: 250px;
 }
 .third-section-content:hover {
   transition: ease-in-out 0.3s;
   cursor: pointer;
-  transform: scale(1.04, 1.02);
+  transform: scale(1.02);
 }
 .third-section-title img {
   height: 50px;
