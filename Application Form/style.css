@@ -51,7 +51,7 @@ footer {
   padding: 20px 0px;
   font-size: 3vh;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .container {
     display: flex;
     justify-content: center;

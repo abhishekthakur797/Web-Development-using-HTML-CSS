@@ -27,8 +27,8 @@ nav img {
   margin-top: 100px;
 }
 .offer-section-img img {
-  width: 450px;
-  height: 450px;
+  width: 300px;
+  height: 300px;
 }
 .offer-section-content {
   display: flex;
@@ -44,7 +44,7 @@ nav img {
   font-family: "Roboto", sans-serif;
 }
 .offer-section-content h1 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bolder;
 }
 .offer-section p {
@@ -117,10 +117,16 @@ nav img {
   color: white;
 }
 /*? 4. menu section grid section*/
+
+.menu-section {
+  width: 100%;
+}
 .menu-section-img {
   display: grid;
   gap: 10px;
   margin-top: 20px;
+  padding: 0px 100px;
+
   grid-template-areas: "I1 I1 I2 I3" "I1 I1 I2 I7" "I4 I5 I6 I7";
 }
 .item1 {
@@ -161,6 +167,10 @@ footer {
   padding: 20px 180px;
   align-self: center;
   margin-top: 30px;
+}
+footer img {
+  width: 150px;
+  height: 80px;
 }
 footer ul li {
   list-style: none;
@@ -217,7 +227,7 @@ footer ul li {
     height: auto;
   }
   nav img {
-    width: 150px;
+    width: 250px;
   }
   /** 2.offer section  */
   .offer-section {
@@ -287,6 +297,7 @@ footer ul li {
     align-items: center;
     text-align: center;
   }
+
   .footer-follow {
     display: flex;
     align-items: center;

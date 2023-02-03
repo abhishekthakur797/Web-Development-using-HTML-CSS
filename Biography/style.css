@@ -82,7 +82,7 @@ footer {
 }
 
 /*Mobile View*/
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   * {
     margin: 0;
     padding: 0;
